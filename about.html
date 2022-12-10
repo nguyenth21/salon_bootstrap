@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8cdf988424.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Deluxe Nails Website</title>
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>Deluxe Nails</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/about.html" class="navbar__links">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/services.html" class="navbar__links">Services</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="/" role="button" data-toggle="modal" data-target="#apptModal" class="button">Book an Appointment</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>OUR HUMBLE</h1>
+          <h2>BEGINNINGS</h2>
+          <p>The untold story of our shop.</p>
+        </div>
+        <div class="main__img--container">
+          <img src="images/pic5.svg" alt="pic" id="main__img" />
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about">
+      <h1>Family and Culture</h1>
+      <div class="about__container">
+        <div class="about__card">
+          <h2>Family Owned</h2>
+          <p>Take care of your love ones and the salon will grow endlessly. Treat your guests as if they were your relatives.</p>
+        </div>
+        <div class="about__card">
+          <h2>Culture</h2>
+          <p>Create a space where people can embrace and express their cultural beauty. Be unique as you were born to be.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Appointment Section -->
+    <div class="modal fade" id="apptModal" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Make an Appointment</h3>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                <div class="row form-group">
+                  <label for="numGuests" class="col-sm-6 col-form-label">Number of Guests:</label>
+                  <div class="col">
+                    <select class="form-control" name="numGuests" id="numGuests">
+                      <option>Select an option</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <label for="numGuests" class="col-sm-6 col-form-label">Services:</label>
+                  <div class="col">
+                    <select class="form-control" name="typeServices" id="typeServices">
+                      <option>Type of service</option>
+                      <option>Treatment Package</option>
+                      <option>Manicure</option>
+                      <option>Pedicure</option>
+                      <option>Waxing</option>
+                      <option>Extensions</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <label class="col-sm-6 col-form-label" for="date">Date:</label>
+                    <div class="col-sm-6">
+                      <input class="form-control" type="date" id="date" name="date" placeholder="" />
+                    </div>
+                </div>
+                <div class="row form-group">
+                  <div class="col">
+                    <button
+                      type="submit"
+                      class="btn btn-info"
+                      data-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                      Search
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About Us</h2>
+            <a href="/sign__up">Our Story</a> <a href="/">Testimonials</a>
+            <a href="/">Careers</a> <a href="/">Terms of Service</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <a href="/">Contact</a> <a href="/">Support</a>
+            <a href="/">Location</a> <a href="/">Sponsorships</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Videos</h2>
+            <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+            <a href="/">Agency</a> <a href="/">Influencer</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="/">Facebook</a> <a href="/">Instagram</a>
+            <a href="/">Youtube</a> <a href="/">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo"
+              ><i class="fas fa-gem"></i>Deluxe Nails</a
+            >
+          </div>
+          <p class="website__rights">
+            © Deluxe Nails 2022. All rights reserved
+          </p>
+          <div class="social__icons">
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
+              target="_blank"
+              aria-label="Youtube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              class="social__icon--link"
+              href="/"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+    
+  </body>
+</html>
