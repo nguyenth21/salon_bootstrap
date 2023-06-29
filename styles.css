@@ -584,8 +584,8 @@
   }
 }
 
-/* Services Section CSS */
-.services {
+/* Offerings Section CSS */
+.offerings {
   background: #141414;
   display: flex;
   flex-direction: column;
@@ -593,13 +593,13 @@
   align-items: center;
 }
 
-.services__container {
+.offerings__container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.services__card {
+.offerings__card {
   margin: 1rem;
   height: 525px;
   width: 400px;
@@ -615,7 +615,7 @@
   color: #fff;
 }
 
-.services__card:nth-child(2) {
+.offerings__card:nth-child(2) {
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
@@ -624,19 +624,19 @@
     url('images/pic10.jpg');
 }
 
-.services h2 {
+.offerings h2 {
   position: absolute;
   top: 350px;
   left: 30px;
 }
 
-.services__card p {
+.offerings__card p {
   position: absolute;
   top: 400px;
   left: 30px;
 }
 
-.services__card button {
+.offerings__card button {
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -650,7 +650,7 @@
   cursor: pointer;
 }
 
-.services__card:hover {
+.offerings__card:hover {
   transform: scale(1.075);
   transition: 0.2s ease-in;
   cursor: pointer;
