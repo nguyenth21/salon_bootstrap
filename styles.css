@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
 .navbar {
@@ -92,7 +92,7 @@
 }
 
 .button:hover {
-  background: #BA62F7;
+  background: #ba62f7;
   transition: all 0.3s ease;
   text-decoration: none;
   color: #fff;
@@ -199,7 +199,7 @@
   }
 }
 
-/* Here Section CSS */
+/* Hero Section CSS */
 .main {
   background-color: #141414;
 }
@@ -221,7 +221,7 @@
 .main__content h1 {
   font-size: 4rem;
   background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #FFB199 100%);
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -270,12 +270,12 @@
 
 .main__btn:after {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   width: 0;
   height: 100%;
-  background: #BA62F7;
+  background: #ba62f7;
   transition: all 0.35s;
   border-radius: 4px;
 }
@@ -396,7 +396,7 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.6) 100%
     ),
-    url("images/pic3.jpg");
+    url('images/pic3.jpg');
   background-size: cover;
   position: relative;
   color: #fff;
@@ -408,7 +408,7 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.6) 100%
     ),
-    url("images/pic4.jpg");
+    url('images/pic4.jpg');
 }
 
 .services h2 {
@@ -513,7 +513,7 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.6) 100%
     ),
-    url("images/pic7.jpg");
+    url('images/pic7.jpg');
   background-size: cover;
   position: relative;
   color: #fff;
@@ -525,7 +525,7 @@
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.6) 100%
     ),
-    url("images/pic6.jpg");
+    url('images/pic6.jpg');
 }
 
 .about h2 {
@@ -584,13 +584,76 @@
   }
 }
 
-/* Offerings Section CSS */
-.offerings {
+/* Services Section CSS */
+.services {
   background: #141414;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.services__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services__card {
+  margin: 1rem;
+  height: 525px;
+  width: 400px;
+  border-radius: 4px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url('images/pic9.jpg');
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+
+.services__card:nth-child(2) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url('images/pic10.jpg');
+}
+
+.services h2 {
+  position: absolute;
+  top: 350px;
+  left: 30px;
+}
+
+.services__card p {
+  position: absolute;
+  top: 400px;
+  left: 30px;
+}
+
+.services__card button {
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #f77062;
+  position: absolute;
+  top: 440px;
+  left: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.services__card:hover {
+  transform: scale(1.075);
+  transition: 0.2s ease-in;
+  cursor: pointer;
 }
 
 /* Footer CSS */
@@ -734,4 +797,3 @@
   background-color: #f77062;
   color: white;
 }
-
